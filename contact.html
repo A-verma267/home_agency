@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Premier Homes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</head> 
+
+<body class="font-sans bg-gray-100">
+    <!-- Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-[999] px-10">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-800 ">
+                        Premier<span class="text-yellow-500">Homes</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-9">
+                    <a href="index.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Home</a>
+                    <a href="properties.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Properties</a>
+                    <a href="about.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">About
+                        Us</a>
+                    <a href="services.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Services</a>
+                    <a href="contact.html"
+                        class="text-blue-800 font-medium border-b-2 border-blue-800 hover:text-[17px] transition-transform duration-200">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menuButton" class="text-gray-600 hover:text-[17px] transition-transform duration-200">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                    <div id="mobileMenu" class="hidden absolute top-16 left-0 right-0 bg-white shadow-md">
+                        <div class="flex flex-col p-4">
+                            <a href="index.html"
+                                class="text-gray-600 hover:text-blue-800 hover:font-medium hover:translate-x-2 py-2 transition-all duration-200">Home</a>
+                            <a href="properties.html"
+                                class="text-gray-600 hover:text-blue-800 hover:font-medium hover:translate-x-2 py-2 transition-all duration-200">Properties</a>
+                            <a href="about.html"
+                                class="text-gray-600 hover:text-blue-800 hover:font-medium hover:translate-x-2 py-2 transition-all duration-200">About
+                                Us</a>
+                            <a href="services.html"
+                                class="text-gray-600 hover:text-blue-800 hover:font-medium hover:translate-x-2 py-2 transition-all duration-200">Services</a>
+                            <a href="contact.html"
+                                class="text-blue-800 font-medium hover:translate-x-2 py-2 transition-transform duration-200">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative text-white py-[52px] px-10">
+            <div class="absolute inset-0 z-[-1]">
+                <img src="./images/contact.png" alt="Contact us" class="w-full h-full object-cover relative z-[-1]">
+            </div>
+            <div class="relative container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 text-purple [text-shadow:2px_2px_8px_grey]">Get in
+                        Touch</h1>
+                    <p class="text-xl md:text-2xl text-gray-200 italic">We're here to help make your real estate dreams
+                        a reality</p>
+                </div>
+            </div>
+            <section class="py-24">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                            <!-- Contact Info -->
+                            <div class="space-y-8 flex flex-col justify-evenly">
+                                <div>
+                                    <h2 class="text-4xl text-connect [text-shadow:2px_2px_12px_black] font-bold">
+                                        Let's Connect</h2>
+                                        <div class="w-24 h-1 bg-yellow-500 mt-4  mb-6"></div>
+                                    <p class="text-lg text-gray-600">Have questions about buying, selling, or investing
+                                        in real estate? Our expert team is here to help guide you through every step.
+                                    </p>
+                                </div>
+
+                                <div class="space-y-6 mt-[74px]">
+                                    <div class="flex items-center space-x-4 mb-[38px]">
+                                        <div
+                                            class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-phone text-blue-800"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-medium text-gray-800">Phone</h3>
+                                            <p class="text-gray-600">(555) 123-4567</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center space-x-4">
+                                        <div
+                                            class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-envelope text-blue-800"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-medium text-gray-800">Email</h3>
+                                            <p class="text-gray-600">contact@premierhomes.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-4 w-[36%] rounded-2xl py-[15px] px-[19px] bg-connect ">
+                                    <a href="#" class="text-gray-100 hover:text-white"><i class="fab fa-facebook-f w-[26px]"></i></a>
+                                    <a href="#" class="text-gray-100 hover:text-white"><i class="fab fa-twitter w-[26px]"></i></a>
+                                    <a href="#" class="text-gray-100 hover:text-white"><i class="fab fa-instagram w-[26px]"></i></a>
+                                    <a href="#" class="text-gray-100 hover:text-white"><i class="fab fa-linkedin-in w-[26px]"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- Contact Form -->
+                            <div class="bg-white rounded-2xl shadow-xl p-8">
+                                <form class="space-y-6">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">First
+                                                Name</label>
+                                            <input type="text"
+                                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                                required>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Last
+                                                Name</label>
+                                            <input type="text"
+                                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                        <input type="email"
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                            required>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                                        <input type="tel"
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
+                                            required>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                        <textarea rows="4"
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                                    </div>
+                                    <button type="submit"
+                                        class="w-full bg-blue-800 text-white py-4 rounded-lg hover:bg-blue-900 transition duration-300 transform hover:scale-[1.02]">
+                                        Send Message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Office Locations Section -->
+        <section class="bg-gray-100 py-16 px-10">
+            <div class="container mx-auto px-4">
+                <h2
+                    class="text-4xl mt-[23px] font-bold text-office font-[900] [text-shadow:2px_2px_14px_#b4a6a6] text-center">
+                    Our Offices</h2>
+                    <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4  mb-[64px]"></div>
+                    
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Office 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-[16rem] bg-gray-300">
+                            <img class="w-full h-full object-cover" src="./images/office.jpg" alt="">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Downtown Office</h3>
+                            <p class="text-gray-600 mb-4">123 Main Street<br>New York, NY 10001</p>
+                            <p class="text-gray-600"><strong>Phone:</strong> (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <!-- Office 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-[16rem] bg-gray-300">
+                            <img class="w-full h-full object-cover" src="./images/office2.jpg" alt="">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Uptown Office</h3>
+                            <p class="text-gray-600 mb-4">456 Park Avenue<br>New York, NY 10022</p>
+                            <p class="text-gray-600"><strong>Phone:</strong> (555) 234-5678</p>
+                        </div>
+                    </div>
+
+                    <!-- Office 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="h-[16rem] bg-gray-300">
+                            <img class="w-full h-full object-cover" src="./images/office3.jpg" alt="">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Brooklyn Office</h3>
+                            <p class="text-gray-600 mb-4">789 Bedford Ave<br>Brooklyn, NY 11205</p>
+                            <p class="text-gray-600"><strong>Phone:</strong> (555) 345-6789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Working Hours Section -->
+        <section class="py-16 px-10">
+            <div class="container mx-auto px-4">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class=" h-[52px] mt-[24px] text-4xl bg-gradient-to-br bg-clip-text text-transparent font-[900] "
+                        style="background-image: linear-gradient(to bottom right, #6b67c3, #001b56)">Working Hours</h2>
+                        <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4  mb-[64px]"></div>
+                    <div class="rounded-lg shadow-lg p-8 border border-solid border-black bg-azure">
+
+                        <div class="space-y-4 ">
+                            <div class="flex justify-between items-center">
+                                <span class="text-black text-[19px] [text-shadow:1px_1px_8px_grey]">Monday -
+                                    Friday</span>
+                                <span class="font-semibold text-timing">9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-black text-[19px] [text-shadow:1px_1px_8px_grey]">Saturday</span>
+                                <span class="font-semibold text-timing">10:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-black text-[19px] [text-shadow:1px_1px_8px_grey]">Sunday</span>
+                                <span class="font-semibold text-timing">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq bg-gray-100 py-16 min-h-[80vh] flex items-center justify-center px-10">
+
+            <div class="w-[100%] h-[455.675px] relative">
+                <div class="w-[315.925px] h-[214.925px] absolute top-[25%] left-[25%] z--1 rounded-full blur-[56px] bg-black"></div>
+                <img class="w-[427.388px] h-[250.613px] object-cover absolute top-5 left-10 z-[10] rounded-xl"
+                    src="./images/sellingservices.jpg" alt="">
+                <img class="w-[356.15px] h-[227.837px] object-cover absolute bottom-5 right-20 z-[1] rounded-xl"
+                    src="./images/buyingservices.jpg" alt="">
+            </div>
+
+            <div class="container mx-auto px-4 flex self-start pt-[26px]">
+                <div class="w-[90%] mx-auto space-y-6" id="faq-section">
+                    <h2 class="font-bold text-4xl text-transparent bg-clip-text text-center " style="background-image: linear-gradient(to bottom right, #6b67c3, #001b56)">Frequently Asked Questions</h2>
+                    <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4  mb-12"></div>
+                    <!-- FAQ Item -->
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full flex justify-between items-center p-6 focus:outline-none faq-toggle">
+                            <h3 class="text-xl font-semibold text-gray-800">How do I schedule a viewing?</h3>
+                            <svg class="w-6 h-6 text-gray-600 transition-transform duration-300 faq-icon" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="px-6 pb-6 hidden faq-answer">
+                            <p class="text-gray-600">You can schedule a viewing by filling out our contact form,
+                                calling our office directly, or reaching out to one of our agents. We'll get back to
+                                you within 24 hours to arrange a convenient time.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item -->
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full flex justify-between items-center p-6 focus:outline-none faq-toggle">
+                            <h3 class="text-xl font-semibold text-gray-800">What documents do I need to rent/buy a
+                                property?</h3>
+                            <svg class="w-6 h-6 text-gray-600 transition-transform duration-300 faq-icon" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="px-6 pb-6 hidden faq-answer">
+                            <p class="text-gray-600">Required documents typically include proof of income,
+                                employment verification, photo ID, and references. For purchases, you'll also need
+                                proof of funds or mortgage pre-approval.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item -->
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full flex justify-between items-center p-6 focus:outline-none faq-toggle">
+                            <h3 class="text-xl font-semibold text-gray-800">How long does the buying process take?
+                            </h3>
+                            <svg class="w-6 h-6 text-gray-600 transition-transform duration-300 faq-icon" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="px-6 pb-6 hidden faq-answer">
+                            <p class="text-gray-600">The buying process typically takes 30-90 days from offer
+                                acceptance to closing, depending on various factors such as financing, inspections,
+                                and negotiations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Script -->
+                    <script>
+                        document.querySelectorAll('.faq-toggle').forEach(button => {
+                            button.addEventListener('click', () => {
+                                const answer = button.nextElementSibling;
+                                const icon = button.querySelector('.faq-icon');
+
+                                answer.classList.toggle('hidden');
+                                icon.classList.toggle('rotate-180');
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Premier<span class="text-yellow-500">Homes</span></h3>
+                    <p class="text-gray-400 mb-4">
+                        Your trusted partner in the real estate market since 2008. We're committed to helping you find the perfect property.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="properties.html" class="text-gray-400 hover:text-white">Properties</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Property Sales</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Property Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Property Valuation</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Investment Consulting</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Market Analysis</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">123 Real Estate Avenue, Cityname, ST 12345</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">info@premierhomes.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Premier Homes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

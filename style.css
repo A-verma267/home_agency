@@ -1,0 +1,95 @@
+.stroke {
+    -webkit-text-stroke: 1px black;
+}
+
+.stroke-white {
+    text-shadow: 5px 5px 13px black;
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+.faq::-webkit-scrollbar {
+    display: none;
+}
+
+.content {
+    position: absolute;
+    bottom: 0%;
+    height: 20%;
+    color: white;
+    display: none;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+
+.serviceshover {
+    transition: all 0.3s ease-in;
+}
+
+.serviceshover:hover img {
+    filter: blur(2px);
+    /* scale: 1.2; */
+
+}
+
+.serviceshover:hover .content {
+    display: flex;
+}
+
+.hero-pattern {
+    background-color: #f0f7ff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%231e40af' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.step-connector {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #3b82f6;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.step-number {
+    z-index: 1;
+    position: relative;
+}
+
+.service-item {
+    transition: all 0.3s ease;
+}
+
+.service-item:hover .service-content {
+    opacity: 0;
+}
+
+.service-content {
+    opacity: 100;
+    transition: opacity 0.3s ease;
+}
+
+.service-connector {
+    position: absolute;
+}
+
+@media (max-width: 1024px) {
+    .flowchart-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .center-item {
+        grid-column: span 2;
+        order: -1;
+    }
+}
+
+@media (max-width: 640px) {
+    .flowchart-container {
+        grid-template-columns: 1fr;
+    }
+
+    .center-item {
+        grid-column: span 1;
+    }
+}

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Premier Homes</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-200">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md sticky top-0 z-[999] px-10">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-800 ">
+                        Premier<span class="text-yellow-500">Homes</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-9">
+                    <a href="index.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Home</a>
+                    <a href="properties.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Properties</a>
+                    <a href="about.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">About
+                        Us</a>
+                    <a href="services.html"
+                        class="text-blue-800 font-medium border-b-2 border-blue-800 hover:text-[17px] transition-transform duration-200">Services</a>
+                    <a href="contact.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menuButton" class="text-gray-600 hover:text-[17px] transition-transform duration-200">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                    <div id="mobileMenu" class="hidden absolute top-16 left-0 right-0 bg-white shadow-md">
+                        <div class="flex flex-col p-4">
+                            <a href="index.html"
+                                class="text-gray-600 hover:text-blue-800 hover:font-medium hover:translate-x-2 py-2 transition-all duration-200">Home</a>
+                            <a href="properties.html"
+                                class="text-gray-600 hover:text-blue-800 hover:font-medium hover:translate-x-2 py-2 transition-all duration-200">Properties</a>
+                            <a href="about.html"
+                                class="text-gray-600 hover:text-blue-800 hover:font-medium hover:translate-x-2 py-2 transition-all duration-200">About
+                                Us</a>
+                            <a href="services.html"
+                                class="text-blue-800 font-medium hover:translate-x-2 py-2 transition-transform duration-200">Services</a>
+                            <a href="contact.html"
+                                class="text-gray-600 hover:text-blue-800 hover:font-medium hover:translate-x-2 py-2 transition-all duration-200">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+
+    <section id="services" class="mb-[43px]">
+        <div class="container mx-auto px-6">
+            <div class="w-full h-[40vh] bg-blue-800 flex items-center justify-around relative mb-[40px]">
+                <div class="text-center mb-16 ">
+                    <h2
+                        class="serviceheading text-4xl [text-shadow:2px_2px_8px_black] [-webkit-text-stroke:1px_black] font-bold mb-4 text-gray-50">
+                        Our Services</h2>
+                    <p class="servicesp text-gray-200 italic max-w-2xl mx-auto">We offer a comprehensive range of services to help
+                        you find,
+                        finance, and move into your dream home with confidence.</p>
+                </div>
+            </div>
+
+            <div class="w-full bg-white mx-auto relative">
+                <img class="absolute w-full h-full object-cover opacity-20" src="./images/servicesbg.jpg" alt="">
+                <section id="services" class="py-16  min-h-[80vh] ">
+                    <div class="container mx-auto px-4">
+    
+                        <div class="flowchart-container relative max-w-6xl mx-auto">
+                            <!-- Top row services -->
+                            <div class="relative grid grid-cols-3 gap-8 h-[292px] top-row">
+    
+                                <div
+                                    class="service-item rounded-full bg-white shadow-lg overflow-hidden border-4 border-blue-600 hover:shadow-2xl h-64 w-64 mx-auto absolute top-[36%]">
+                                    <div class="h-full w-full flex flex-col items-center justify-center">
+                                        <div class="absolute inset-0">
+                                            <img src="./images/propertysearch.png" alt="Property Search"
+                                                class="h-full w-full object-cover " style="object-position: left;">
+                                            <div
+                                                class="service-content absolute inset-0 bg-blue-200 bg-opacity-80 p-4 flex flex-col items-center justify-center text-white">
+                                                <i class="fas fa-search text-2xl text-yellow-400 mt-2 mb-7"></i>
+                                                <h3 class="text-xl font-bold mb-2 text-black">Property Search</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div
+                                    class="service-item rounded-full bg-white shadow-lg overflow-hidden border-4 border-blue-600 hover:shadow-2xl h-64 w-64 mx-auto absolute left-[38%] top-[-8%]">
+                                    <div class="h-full w-full flex flex-col items-center justify-center">
+                                        <div class="absolute inset-0">
+                                            <img src="./images/personalizeduser.jpg" alt="Personalized Guidance"
+                                                class="h-full w-full object-cover">
+                                            <div
+                                                class="service-content absolute inset-0 bg-blue-200 bg-opacity-80 p-4 flex flex-col items-center justify-center text-white">
+                                                <i class="fas fa-handshake text-2xl text-yellow-400 mt-2 mb-7"></i>
+                                                <h3 class="text-xl font-bold mb-2 text-black">Personalized Guidance</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div
+                                    class="service-item rounded-full bg-white shadow-lg overflow-hidden border-4 border-blue-600 hover:shadow-2xl h-64 w-64 mx-auto absolute top-[36%] right-[0%]">
+                                    <div class="h-full w-full flex flex-col items-center justify-center">
+                                        <div class="absolute inset-0">
+                                            <img src="./images/propertyviewing.jpg" alt="Property Viewing"
+                                                class="h-full w-full object-cover">
+                                            <div
+                                                class="service-content absolute inset-0 bg-blue-200 bg-opacity-80 p-4 flex flex-col items-center justify-center text-white">
+                                                <i class="fas fa-home text-2xl text-yellow-400 mt-2 mb-7"></i>
+                                                <h3 class="text-xl font-bold mb-2 text-black">Property Viewing</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Center item -->
+                            <div
+                                class="center-item col-span-3 rounded-full shadow-xl h-80 w-80 mx-auto my-8 flex flex-col items-center justify-center text-white p-12 relative border-8 border-blue-600 overflow-hidden group">
+                                <a href="index.html"
+                                    class="text-2xl font-bold text-blue-800 [text-shadow:2px_2px_8px_black] mb-4">
+                                    Premier<span class="text-yellow-500">Homes</span>
+                                </a>
+                                <img src="./images/premiumhomes.jpg" alt="Family Home"
+                                    class="rounded-full h-24 w-24 object-cover border-2 border-white absolute w-full h-full z-[-1] opacity-70 group-hover:scale-110">
+                            </div>
+                            <!-- Bottom row services -->
+                            <div class="relative grid grid-cols-3 gap-8 h-[292px]">
+                                <div
+                                    class="service-item rounded-full bg-white shadow-lg overflow-hidden border-4 border-blue-600 hover:shadow-2xl h-64 w-64 mx-auto absolute top-[-36%]">
+                                    <div class="h-full w-full flex flex-col items-center justify-center">
+                                        <div class="absolute inset-0">
+                                            <img src="./images/marketanalyist.jpg" alt="Market Analysis"
+                                                class="h-full w-full object-cover">
+                                            <div
+                                                class="service-content absolute inset-0 bg-blue-200 bg-opacity-80 p-4 flex flex-col items-center justify-center text-white">
+                                                <i class="fas fa-chart-line text-2xl text-yellow-400 mt-2 mb-7"></i>
+                                                <h3 class="text-xl font-bold mb-2 text-black">Market Analysis</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div
+                                    class="service-item rounded-full bg-white shadow-lg overflow-hidden border-4 border-blue-600 hover:shadow-2xl h-64 w-64 mx-auto absolute left-[40%] top-[23%]">
+                                    <div class="h-full w-full flex flex-col items-center justify-center">
+                                        <div class="absolute inset-0">
+                                            <img src="./images/negotiation.jpg" alt="Negotiation & Paperwork"
+                                                class="h-full w-full object-cover">
+                                            <div
+                                                class="service-content absolute inset-0 bg-blue-200 bg-opacity-80 p-4 flex flex-col items-center justify-center text-white">
+                                                <i class="fas fa-file-signature text-2xl text-yellow-400 mt-2 mb-7"></i>
+                                                <h3 class="text-xl font-bold mb-2 text-black text-center">Negotiation &
+                                                    Paperwork</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div
+                                    class="service-item rounded-full bg-white shadow-lg overflow-hidden border-4 border-blue-600 hover:shadow-2xl h-64 w-64 mx-auto absolute top-[-36%] right-0">
+                                    <div class="h-full w-full flex flex-col items-center justify-center">
+                                        <div class="absolute inset-0">
+                                            <img src="./images/financilaassistance.jpg" alt="Financing Assistance"
+                                                class="h-full w-full object-cover">
+                                            <div
+                                                class="service-content absolute inset-0 bg-blue-200 bg-opacity-80 p-4 flex flex-col items-center justify-center text-white">
+                                                <i class="fas fa-coins text-2xl text-yellow-400 mt-2 mb-7"></i>
+                                                <h3 class="text-xl font-bold mb-2 text-black">Financing Assistance</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-blue-50 my-[63px]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-[130px]">
+                <h2
+                    class="text-4xl font-bold bg-gradient-to-br from-blue-500 to-blue-800 bg-clip-text text-transparent">
+                    How It Works</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4 mb-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto italic">Our simple 5-step process makes finding and purchasing
+                    your
+                    dream home straightforward and stress-free.</p>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="relative max-w-6xl mx-auto px-4">
+                <!-- Vertical line connector for desktop -->
+                <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-blue-800"></div>
+
+                <!-- Step 1 -->
+                <div class="flex flex-col lg:flex-row items-center mb-[140px] relative">
+                    <div class="lg:w-[45%] mb-10 lg:mb-0 lg:text-right">
+                        <h3 class="text-xl font-bold text-stephead [text-shadow:1px_1px_5px_grey] mb-2"><span
+                                class="text-[17px] mr-[14px] text-blue-800">Step 1:</span> Explore Our Extensive
+                            Listings</h3>
+                        <p class="text-black my-[21px]">Begin your journey by using our user-friendly search tools to
+                            browse a
+                            wide range of properties. Filter your search based on location, type of property, budget,
+                            and other preferences to find homes that best match your criteria.</p>
+                    </div>
+                    <div
+                        class="step-number bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg absolute left-1/2 transform -translate-x-1/2 z-10">
+                        1</div>
+                    <div class="lg:w-[45%] lg:ml-auto">
+                        <div class="p-6 rounded-lg flex justify-center">
+                            <!-- Search/Browse Animation SVG -->
+                            <svg width="180" height="160" viewBox="0 0 180 160" class="property-search-animation">
+                                <rect x="20" y="30" width="140" height="100" rx="5" fill="#f0f9ff" stroke="#3b82f6"
+                                    stroke-width="2" />
+                                <!-- Search Bar -->
+                                <rect x="35" y="45" width="110" height="25" rx="12" fill="white" stroke="#f59e0b"
+                                    stroke-width="2" />
+                                <circle cx="45" cy="57" r="7" fill="none" stroke="#f59e0b" stroke-width="2"
+                                    class="animate-pulse" />
+                                <line x1="50" y1="62" x2="55" y2="67" stroke="#f59e0b" stroke-width="2" />
+
+                                <!-- Property Cards -->
+                                <rect x="35" y="80" width="45" height="35" rx="3" fill="white" stroke="#f59e0b"
+                                    stroke-width="1" class="translate-y-2 transition-transform duration-700">
+                                    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s"
+                                        repeatCount="indefinite" />
+                                </rect>
+                                <rect x="90" y="80" width="45" height="35" rx="3" fill="white" stroke="#f59e0b"
+                                    stroke-width="1" class="translate-y-1 transition-transform duration-500">
+                                    <animate attributeName="opacity" values="0.8;1;0.8" dur="2.5s"
+                                        repeatCount="indefinite" />
+                                </rect>
+
+                                <!-- Cursor Animation -->
+                                <circle cx="120" cy="60" r="3" fill="#f59e0b">
+                                    <animate attributeName="cx" values="60;140;90;120" dur="4s"
+                                        repeatCount="indefinite" />
+                                    <animate attributeName="cy" values="57;57;100;60" dur="4s"
+                                        repeatCount="indefinite" />
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col-reverse lg:flex-row items-center mb-[140px] relative">
+                    <div class="lg:w-[45%]">
+                        <div class="p-6 rounded-lg flex justify-center">
+                            <!-- Property Visit Animation SVG -->
+                            <svg width="180" height="160" viewBox="0 0 180 160" class="property-visit-animation">
+                                <!-- House Outline -->
+                                <path d="M40,100 L40,60 L90,30 L140,60 L140,100 Z" fill="#f0f9ff" stroke="#f59e0b"
+                                    stroke-width="2" />
+                                <!-- Door -->
+                                <rect x="80" y="70" width="20" height="30" fill="white" stroke="#f59e0b"
+                                    stroke-width="1" />
+                                <!-- Windows -->
+                                <rect x="55" y="60" width="15" height="15" fill="white" stroke="#f59e0b"
+                                    stroke-width="1" />
+                                <rect x="110" y="60" width="15" height="15" fill="white" stroke="#f59e0b"
+                                    stroke-width="1" />
+
+                                <!-- Person -->
+                                <circle cx="70" cy="120" r="8" fill="#f59e0b">
+                                    <animate attributeName="cx" values="160;90;70" dur="3s" fill="freeze" />
+                                </circle>
+                                <line x1="70" y1="128" x2="70" y2="140" stroke="#f59e0b" stroke-width="2">
+                                    <animate attributeName="x1" values="160;90;70" dur="3s" fill="freeze" />
+                                    <animate attributeName="x2" values="160;90;70" dur="3s" fill="freeze" />
+                                </line>
+
+                                <!-- Calendar Icon -->
+                                <rect x="120" y="110" width="20" height="20" rx="2" fill="white" stroke="#f59e0b"
+                                    stroke-width="1" />
+                                <line x1="120" y1="115" x2="140" y2="115" stroke="#f59e0b" stroke-width="1" />
+                                <circle cx="125" cy="120" r="1.5" fill="#f59e0b">
+                                    <animate attributeName="fill" values="#f59e0b;#fcd34d;#f59e0b" dur="2s"
+                                        repeatCount="indefinite" />
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="step-number bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg absolute left-1/2 transform -translate-x-1/2 z-10">
+                        2</div>
+                    <div class="lg:w-[45%] mb-8 lg:mb-0 lg:text-left lg:ml-auto">
+                        <h3 class="text-xl font-bold text-stephead [text-shadow:1px_1px_5px_grey] mb-2"><span
+                                class="text-[17px] mr-[14px] text-blue-800">Step 2:</span> Experience Your Future Home
+                            Firsthand
+                        </h3>
+                        <p class="text-gray-600">Once you've identified properties of interest, schedule a visit to see
+                            them in person. Our team will arrange convenient viewing times and provide you with all
+                            necessary details for your visit.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col lg:flex-row items-center mb-[140px] relative">
+                    <div class="lg:w-[45%] mb-8 lg:mb-0 lg:text-right">
+                        <h3 class="text-xl font-bold text-stephead [text-shadow:1px_1px_5px_grey] mb-2"><span
+                                class="text-[17px] mr-[14px] text-blue-800">Step 3:</span> Receive Personalized Guidance
+                        </h3>
+                        <p class="text-gray-600">Our experienced consultants are here to provide you with valuable
+                            insights and answer all your questions. Whether you need advice on property features, market
+                            trends, or financing options, our team is dedicated to ensuring you have all the information
+                            you need.</p>
+                    </div>
+                    <div
+                        class="step-number bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg absolute left-1/2 transform -translate-x-1/2 z-10">
+                        3</div>
+                    <div class="lg:w-[45%] lg:ml-auto">
+                        <div class="p-6 rounded-lg flex justify-center">
+                            <!-- Consultant Animation SVG -->
+                            <svg width="180" height="160" viewBox="0 0 180 160" class="consultant-animation">
+                                <!-- People -->
+                                <circle cx="60" cy="80" r="10" fill="#f59e0b" />
+                                <rect x="50" y="91" width="20" height="25" rx="5" fill="#f59e0b" />
+
+                                <circle cx="120" cy="80" r="10" fill="#fbbf24" />
+                                <rect x="110" y="91" width="20" height="25" rx="5" fill="#fbbf24" />
+
+                                <!-- Chat Bubble -->
+                                <path d="M70,65 Q90,50 110,65 L110,85 Q90,100 70,85 Z" fill="white" stroke="#f59e0b"
+                                    stroke-width="1" />
+
+                                <!-- Charts/Data -->
+                                <rect x="75" y="110" width="30" height="20" fill="#fef3c7" stroke="#f59e0b"
+                                    stroke-width="1" />
+                                <line x1="80" y1="120" x2="80" y2="115" stroke="#f59e0b" stroke-width="2" />
+                                <line x1="85" y1="120" x2="85" y2="110" stroke="#f59e0b" stroke-width="2">
+                                    <animate attributeName="y2" values="120;110;120;110" dur="3s"
+                                        repeatCount="indefinite" />
+                                </line>
+                                <line x1="90" y1="120" x2="90" y2="113" stroke="#f59e0b" stroke-width="2" />
+                                <line x1="95" y1="120" x2="95" y2="108" stroke="#f59e0b" stroke-width="2">
+                                    <animate attributeName="y2" values="120;108;120;108" dur="4s"
+                                        repeatCount="indefinite" />
+                                </line>
+                                <line x1="100" y1="120" x2="100" y2="117" stroke="#f59e0b" stroke-width="2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col-reverse lg:flex-row items-center mb-[140px] relative">
+                    <div class="lg:w-[45%]">
+                        <div class="p-6 rounded-lg flex justify-center">
+                            <!-- Selection Process Animation SVG -->
+                            <svg width="180" height="160" viewBox="0 0 180 160" class="selection-animation">
+                                <!-- Houses -->
+                                <path d="M40,90 L40,70 L60,55 L80,70 L80,90 Z" fill="#f0f9ff" stroke="#94a3b8"
+                                    stroke-width="1" opacity="0.5" />
+                                <path d="M70,90 L70,70 L90,55 L110,70 L110,90 Z" fill="#f0f9ff" stroke="#94a3b8"
+                                    stroke-width="1" opacity="0.5" />
+                                <path d="M100,90 L100,70 L120,55 L140,70 L140,90 Z" fill="#f0f9ff" stroke="#f59e0b"
+                                    stroke-width="2" />
+
+                                <!-- Checkmark Animation -->
+                                <circle cx="120" cy="80" r="15" fill="#fef3c7" opacity="0">
+                                    <animate attributeName="opacity" values="0;0;1" dur="3s" fill="freeze" begin="1s" />
+                                </circle>
+                                <path d="M112,80 L118,86 L130,74" fill="none" stroke="#f59e0b" stroke-width="2"
+                                    stroke-linecap="round" opacity="0">
+                                    <animate attributeName="opacity" values="0;0;1" dur="3s" fill="freeze"
+                                        begin="1.5s" />
+                                </path>
+
+                                <!-- Magnifying Glass -->
+                                <circle cx="70" cy="60" r="15" fill="none" stroke="#f59e0b" stroke-width="1.5"
+                                    opacity="0.8">
+                                    <animate attributeName="cx" values="70;120;120" dur="2.5s" fill="freeze" />
+                                    <animate attributeName="opacity" values="0.8;0;0" dur="2.5s" fill="freeze"
+                                        begin="1s" />
+                                </circle>
+                                <line x1="80" y1="70" x2="85" y2="75" stroke="#f59e0b" stroke-width="1.5" opacity="0.8">
+                                    <animate attributeName="x1" values="80;130;130" dur="2.5s" fill="freeze" />
+                                    <animate attributeName="x2" values="85;135;135" dur="2.5s" fill="freeze" />
+                                    <animate attributeName="opacity" values="0.8;0;0" dur="2.5s" fill="freeze"
+                                        begin="1s" />
+                                </line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="step-number bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg absolute left-1/2 transform -translate-x-1/2 z-10">
+                        4</div>
+                    <div class="lg:w-[45%] mb-8 lg:mb-0 lg:text-left lg:ml-auto">
+                        <h3 class="text-xl font-bold text-stephead [text-shadow:1px_1px_5px_grey] mb-2"><span
+                                class="text-[17px] mr-[14px] text-blue-800">Step 4:</span> Select the Perfect Home</h3>
+                        <p class="text-gray-600">Once you've found the home that meets your needs and preferences, it's
+                            time to make it official. Our team will guide you through the process of making an offer,
+                            negotiating terms, and finalizing the purchase.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="flex flex-col lg:flex-row items-center relative">
+                    <div class="lg:w-[45%] mb-8 lg:mb-0 lg:text-right">
+                        <h3 class="text-xl font-bold text-stephead [text-shadow:1px_1px_5px_grey] mb-2"><span
+                                class="text-[17px] mr-[14px] text-blue-800">Step 5:</span> Enjoy a Smooth Transaction
+                        </h3>
+                        <p class="text-gray-600">We handle all the necessary paperwork and formalities to ensure a
+                            seamless transaction. From coordinating with legal experts to managing documentation, our
+                            team will support you through every step of the closing process.</p>
+                    </div>
+                    <div
+                        class="step-number bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg absolute left-1/2 transform -translate-x-1/2 z-10">
+                        5</div>
+                    <div class="lg:w-[45%] lg:ml-auto">
+                        <div class="p-6 rounded-lg flex justify-center">
+                            <!-- Transaction Completion Animation SVG -->
+                            <svg width="180" height="160" viewBox="0 0 180 160" class="transaction-animation">
+                                <!-- Document Stack -->
+                                <rect x="50" y="70" width="60" height="70" fill="white" stroke="#3b82f6"
+                                    stroke-width="1" />
+                                <rect x="55" y="65" width="60" height="70" fill="white" stroke="#3b82f6"
+                                    stroke-width="1" />
+                                <rect x="60" y="60" width="60" height="70" fill="white" stroke="#3b82f6"
+                                    stroke-width="1" />
+
+                                <!-- Document Lines -->
+                                <line x1="70" y1="75" x2="110" y2="75" stroke="#94a3b8" stroke-width="1" />
+                                <line x1="70" y1="85" x2="110" y2="85" stroke="#94a3b8" stroke-width="1" />
+                                <line x1="70" y1="95" x2="90" y2="95" stroke="#94a3b8" stroke-width="1" />
+
+                                <!-- Pen -->
+                                <path d="M120,100 L130,90 L135,95 L125,105 Z" fill="#f59e0b">
+                                    <animate attributeName="transform" type="translate" values="0,0; -50,-25; -50,-25"
+                                        dur="3s" fill="freeze" />
+                                </path>
+                                <line x1="125" y1="105" x2="120" y2="110" stroke="#f59e0b" stroke-width="1">
+                                    <animate attributeName="transform" type="translate" values="0,0; -50,-25; -50,-25"
+                                        dur="3s" fill="freeze" />
+                                </line>
+
+                                <!-- Signature Line Animation -->
+                                <line x1="70" y1="110" x2="70" y2="110" stroke="#f59e0b" stroke-width="1.5">
+                                    <animate attributeName="x2" values="70;100" dur="2s" fill="freeze" begin="1s" />
+                                </line>
+
+                                <!-- House Keys -->
+                                <path d="M125,130 L135,130 L135,135 L140,135 L140,130 L142,130 L142,138 L125,138 Z"
+                                    fill="#f59e0b">
+                                    <animate attributeName="opacity" values="0;0;1" dur="3s" fill="freeze"
+                                        begin="2.5s" />
+                                </path>
+                                <circle cx="130" cy="134" r="2" fill="white">
+                                    <animate attributeName="opacity" values="0;0;1" dur="3s" fill="freeze"
+                                        begin="2.5s" />
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    // You could add scroll-triggered animations here
+                    const stepElements = document.querySelectorAll('.step-number');
+
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('animate-bounce');
+                                setTimeout(() => {
+                                    entry.target.classList.remove('animate-bounce');
+                                }, 1000);
+                            }
+                        });
+                    }, { threshold: 0.7 });
+
+                    stepElements.forEach(step => {
+                        observer.observe(step);
+                    });
+                });
+            </script>
+
+        </div>
+    </section>
+
+    <section class="action py-16 w-[60%] mx-auto rounded-2xl mb-[41px] bg-blue-800">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white [letter-spacing:0.3px] mb-4">Ready to Work With Us?</h2>
+            <p class="text-p oblique max-w-2xl mx-auto mb-8">
+                Whether you're looking to buy, sell, or invest, our team is ready to provide you with exceptional service tailored to your needs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html" class="bg-a text-white py-3 px-8 rounded-lg hover:bg-yellow-700 transition contactus">Contact Us Today</a>
+                <a href="properties.html" class="bg-white text-blue-800 border border-blue-800 py-3 px-8 rounded-lg hover:bg-blue-50 transition properties">Browse Properties</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Premier<span class="text-yellow-500">Homes</span></h3>
+                    <p class="text-gray-400 mb-4">
+                        Your trusted partner in the real estate market since 2008. We're committed to helping you find
+                        the perfect property.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="properties.html" class="text-gray-400 hover:text-white">Properties</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Property Sales</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Property Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Property Valuation</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Investment Consulting</a>
+                        </li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Market Analysis</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">123 Real Estate Avenue, Cityname, ST 12345</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">info@premierhomes.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Premier Homes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="services.js"></script>
+</body>
+
+</html>

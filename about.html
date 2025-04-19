@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Premier Homes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-[999] px-10">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-800 ">
+                        Premier<span class="text-yellow-500">Homes</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-9">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Home</a>
+                    <a href="properties.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Properties</a>
+                    <a href="about.html" class="text-blue-800 font-medium border-b-2 border-blue-800 hover:text-[17px] transition-transform duration-200">About Us</a>
+                    <a href="services.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Services</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menuButton" class="text-gray-600 hover:text-[17px] transition-transform duration-200">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                    <div id="mobileMenu" class="hidden absolute top-16 left-0 right-0 bg-white shadow-md">
+                        <div class="flex flex-col p-4">
+                            <a href="index.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:translate-x-2 py-2 transition-all duration-200">Home</a>
+                            <a href="properties.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:translate-x-2 py-2 transition-all duration-200">Properties</a>
+                            <a href="about.html" class="text-blue-800 font-medium hover:translate-x-2 py-2 transition-transform duration-200">About Us</a>
+                            <a href="services.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:translate-x-2 py-2 transition-all duration-200">Services</a>
+                            <a href="contact.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:translate-x-2 py-2 transition-all duration-200">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="px-10">
+        <!-- Page Title -->
+        <section class="bg-blue-900 text-white py-12">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl font-bold aboutpremium">About Premier Homes</h1>
+                <p class="mt-2 text-lg aboutp">Your trusted partner in the real estate market since 2008</p>
+            </div>
+        </section>
+
+        <!-- Company History & Mission -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="history grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="story text-5xl text-heading font-bold [text-shadow:5px_5px_10px_whitesmoke]">Our Story</h2>
+                        <div class="bottomline w-24 h-1 bg-yellow-500 mt-4 ml-4 mb-[43px] "></div>
+                        <p class="historyp text-gray-600 mb-4">
+                            Founded in 2008 by real estate veterans Michael and Sarah Thompson, Premier Homes was built on the 
+                            principle that buying or selling a home should be a seamless, stress-free experience guided by experts who truly care.
+                        </p>
+                        <p class="historyp text-gray-600 mb-4">
+                            What began as a small family operation has grown into one of the region's most respected real estate agencies, 
+                            with over 50 dedicated agents and staff serving thousands of satisfied clients.
+                        </p>
+                        <p class="historyp text-gray-600 mb-4">
+                            Despite our growth, we've maintained our commitment to personalized service, ensuring that every client 
+                            feels supported throughout their real estate journey.
+                        </p>
+                        <div class="mission mt-8">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                            <p class="text-gray-600 italic border-l-4 border-yellow-500 pl-4 py-2">
+                                "To guide our clients through the real estate process with integrity, expertise, and dedication, 
+                                ensuring they find not just a property, but a place they're proud to call home."
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/homeabout.jpg" alt="Company History" class="imagehistory rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Team -->
+        <section class="team py-16 bg-gray-50  mt-[49px]">
+            <div class="container mx-auto px-4">
+                <div class="text-center  mb-[99px]">
+                    <h2 class="text-5xl font-[900] text-peach stroke text-gray-800 [text-shadow:2px_2px_8px_black]">Meet Our Team</h2>
+                    <div class="teamline w-24 h-1 bg-yellow-500 mx-auto mt-4"></div>
+                    <p class="teamexperienced text-gray-600 mt-4 max-w-2xl mx-auto italic">
+                        Our experienced professionals are dedicated to providing exceptional service
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="teammembers bg-white rounded-lg overflow-hidden shadow-lg text-center">
+                        <img src="./images/user6.jpg" alt="CEO" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-1">Michael Thompson</h3>
+                            <p class="text-blue-800 mb-4">CEO & Founder</p>
+                            <p class="text-gray-600 text-sm mb-4">
+                                With over 25 years in real estate, Michael leads our team with vision and expertise.
+                            </p>
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="text-blue-800 hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-blue-800 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-blue-800 hover:text-blue-600"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg text-center">
+                        <img src="./images/user2.jpg" alt="Sales Director" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-1">Sarah Thompson</h3>
+                            <p class="text-blue-800 mb-4">Sales Director</p>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Sarah's market insights and negotiation skills have helped countless clients find their perfect home.
+                            </p>
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="text-blue-800 hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-blue-800 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-blue-800 hover:text-blue-600"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg text-center">
+                        <img src="./images/user3.jpg" alt="Lead Agent" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-1">Robert Chen</h3>
+                            <p class="text-blue-800 mb-4">Lead Luxury Specialist</p>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Robert specializes in high-end properties and has a keen eye for architectural excellence.
+                            </p>
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="text-blue-800 hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-blue-800 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-blue-800 hover:text-blue-600"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg text-center">
+                        <img src="./images/user5.jpg" alt="Marketing Director" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-1">Jessica Martinez</h3>
+                            <p class="text-blue-800 mb-4">Marketing Director</p>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Jessica's innovative marketing strategies ensure our listings receive maximum exposure.
+                            </p>
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="text-blue-800 hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-blue-800 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-blue-800 hover:text-blue-600"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+        <!-- Achievements & Certifications -->
+        <section class="py-16 bg-blue-900 text-white mt-[51px] px-[25px]">
+            <div class="container mx-auto px-4 mb-[83px]">
+                <div class="text-center mb-12">
+                    <h2 class="text-5xl font-bold [-webkit-text-stroke:1px_black]">Our Achievements</h2>
+                    <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-[22px] font-bold mb-6">Awards & Recognition</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-trophy text-yellow-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Best Real Estate Agency 2024</h4>
+                                    <p class="text-blue-200 italic">National Association of Realtors</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-trophy text-yellow-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Top Luxury Property Broker 2023</h4>
+                                    <p class="text-blue-200 italic">Luxury Real Estate Awards</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-trophy text-yellow-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Excellence in Customer Service 2022-2024</h4>
+                                    <p class="text-blue-200 italic">Real Estate Excellence Awards</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-trophy text-yellow-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Most Innovative Real Estate Marketing 2023</h4>
+                                    <p class="text-blue-200 italic">Digital Marketing Association</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-6">Certifications & Memberships</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="bg-white bg-opacity-10 p-6 rounded-lg text-center">
+                                <i class="fas fa-certificate text-yellow-500 text-3xl mb-4"></i>
+                                <h4 class="font-semibold">National Association of Realtors</h4>
+                                <p class="text-blue-200 text-sm italic">Certified Member</p>
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-6 rounded-lg text-center">
+                                <i class="fas fa-certificate text-yellow-500 text-3xl mb-4"></i>
+                                <h4 class="font-semibold">Luxury Home Marketing Specialist</h4>
+                                <p class="text-blue-200 text-sm italic">Certified Team</p>
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-6 rounded-lg text-center">
+                                <i class="fas fa-certificate text-yellow-500 text-3xl mb-4"></i>
+                                <h4 class="font-semibold">Real Estate Board</h4>
+                                <p class="text-blue-200 text-sm italic">Accredited Agency</p>
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-6 rounded-lg text-center">
+                                <i class="fas fa-certificate text-yellow-500 text-3xl mb-4"></i>
+                                <h4 class="font-semibold">Environmental Real Estate Council</h4>
+                                <p class="text-blue-200 text-sm italic">Green Certified</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials -->
+        <section class="py-16 mt-[64px] mb-[64px] ">
+            <div class="container mx-auto px-4 relative ">
+                <div class="text-center mb-12 absolute top-[-20%] left-1/2 transform -translate-x-1/2 z-[-1]">
+                    <h2 class="text-6xl font-[900] text-blue-100 [-webkit-text-stroke:2px_#07075c] [text-shadow:2px_2px_8px_#00008c] ">What Our Clients Say</h2>
+                    <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 mt-[54px]">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="./images/user4.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-bold">James Wilson</h4>
+                                <p class="text-gray-600 text-sm">Homebuyer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "Premier Homes made finding our first home an enjoyable experience. Their attention to detail and understanding of our needs was exceptional."
+                        </p>
+                        <div class="mt-4 text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="./images/user5.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-bold">Emily & David Parker</h4>
+                                <p class="text-gray-600 text-sm">Property Seller</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "We sold our home in just two weeks with Premier Homes. Their marketing strategy and professional guidance made all the difference."
+                        </p>
+                        <div class="mt-4 text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="./images/user6.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-bold">Sophia Rodriguez</h4>
+                                <p class="text-gray-600 text-sm">Luxury Home Buyer</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "Robert's expertise in the luxury market was invaluable. He found us a property that exceeded our expectations and negotiated a deal that saved us thousands."
+                        </p>
+                        <div class="mt-4 text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="action py-16 w-[60%] mx-auto rounded-2xl mb-[41px] bg-blue-800">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-white [letter-spacing:0.3px] mb-4">Ready to Work With Us?</h2>
+                <p class="text-p oblique max-w-2xl mx-auto mb-8">
+                    Whether you're looking to buy, sell, or invest, our team is ready to provide you with exceptional service tailored to your needs.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="contact.html" class="bg-a text-white py-3 px-8 rounded-lg hover:bg-yellow-700 transition contactus">Contact Us Today</a>
+                    <a href="properties.html" class="bg-white text-blue-800 border border-blue-800 py-3 px-8 rounded-lg hover:bg-blue-50 transition properties">Browse Properties</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Premier<span class="text-yellow-500">Homes</span></h3>
+                    <p class="text-gray-400 mb-4">
+                        Your trusted partner in the real estate market since 2008. We're committed to helping you find the perfect property.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="properties.html" class="text-gray-400 hover:text-white">Properties</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Property Sales</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Property Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Property Valuation</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Investment Consulting</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Market Analysis</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">123 Real Estate Avenue, Cityname, ST 12345</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">info@premierhomes.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-400">Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Premier Homes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>
