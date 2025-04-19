@@ -9,10 +9,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body class="font-sans bg-gray-50">
     <!-- Navigation -->
-    <header class="bg-white shadow-md sticky top-0 z-[999] px-10">
+    <header class="bg-white shadow-md sticky top-0 z-[999] px-0 sm:px-10">
         <div class="container mx-auto px-4">
             <nav class="flex justify-between items-center py-4">
                 <div class="flex items-center">
@@ -46,12 +47,12 @@
         </div>
     </header>
 
-    <main class="px-10">
+    <main class="px-3 sm:px-10">
         <!-- Page Title -->
         <section class="bg-blue-900 text-white py-12">
             <div class="container mx-auto px-4 text-center">
-                <h1 class="text-4xl font-bold aboutpremium">About Premier Homes</h1>
-                <p class="mt-2 text-lg aboutp">Your trusted partner in the real estate market since 2008</p>
+                <h1 class="text-3xl sm:text-4xl font-bold aboutpremium">About Premier Homes</h1>
+                <p class="mt-4 mx-3 sm:mx-0 text-gray-200 text-base sm:text-lg aboutp">Your trusted partner in the real estate market since 2008</p>
             </div>
         </section>
 
@@ -62,15 +63,15 @@
                     <div>
                         <h2 class="story text-5xl text-heading font-bold [text-shadow:5px_5px_10px_whitesmoke]">Our Story</h2>
                         <div class="bottomline w-24 h-1 bg-yellow-500 mt-4 ml-4 mb-[43px] "></div>
-                        <p class="historyp text-gray-600 mb-4">
+                        <p class="historyp mb-4 text-desccolor">
                             Founded in 2008 by real estate veterans Michael and Sarah Thompson, Premier Homes was built on the 
                             principle that buying or selling a home should be a seamless, stress-free experience guided by experts who truly care.
                         </p>
-                        <p class="historyp text-gray-600 mb-4">
+                        <p class="historyp mb-4 text-desccolor">
                             What began as a small family operation has grown into one of the region's most respected real estate agencies, 
                             with over 50 dedicated agents and staff serving thousands of satisfied clients.
                         </p>
-                        <p class="historyp text-gray-600 mb-4">
+                        <p class="historyp mb-4 text-desccolor">
                             Despite our growth, we've maintained our commitment to personalized service, ensuring that every client 
                             feels supported throughout their real estate journey.
                         </p>
@@ -93,7 +94,7 @@
         <section class="team py-16 bg-gray-50  mt-[49px]">
             <div class="container mx-auto px-4">
                 <div class="text-center  mb-[99px]">
-                    <h2 class="text-5xl font-[900] text-peach stroke text-gray-800 [text-shadow:2px_2px_8px_black]">Meet Our Team</h2>
+                    <h2 class="text-4xl sm:text-5xl font-[900] text-peach stroke text-gray-800 [text-shadow:2px_2px_8px_black]">Meet Our Team</h2>
                     <div class="teamline w-24 h-1 bg-yellow-500 mx-auto mt-4"></div>
                     <p class="teamexperienced text-gray-600 mt-4 max-w-2xl mx-auto italic">
                         Our experienced professionals are dedicated to providing exceptional service
@@ -102,7 +103,7 @@
                 
                 <div class="grid md:grid-cols-4 gap-8">
                     <div class="teammembers bg-white rounded-lg overflow-hidden shadow-lg text-center">
-                        <img src="./images/user6.jpg" alt="CEO" class="w-full h-64 object-cover">
+                        <img src="./images/user5.jpg" alt="CEO" class="w-full h-64 object-cover">
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-1">Michael Thompson</h3>
                             <p class="text-blue-800 mb-4">CEO & Founder</p>
@@ -150,7 +151,7 @@
                     </div>
                     
                     <div class="bg-white rounded-lg overflow-hidden shadow-lg text-center">
-                        <img src="./images/user5.jpg" alt="Marketing Director" class="w-full h-64 object-cover">
+                        <img src="./images/user6.jpg" alt="Marketing Director" class="w-full h-64 object-cover">
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-1">Jessica Martinez</h3>
                             <p class="text-blue-800 mb-4">Marketing Director</p>
@@ -173,7 +174,7 @@
         <section class="py-16 bg-blue-900 text-white mt-[51px] px-[25px]">
             <div class="container mx-auto px-4 mb-[83px]">
                 <div class="text-center mb-12">
-                    <h2 class="text-5xl font-bold [-webkit-text-stroke:1px_black]">Our Achievements</h2>
+                    <h2 class="text-4xl sm:text-5xl font-bold [-webkit-text-stroke:0.2px_black] sm:[-webkit-text-stroke:1px_black]">Our Achievements</h2>
                     <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4"></div>
                 </div>
                 
@@ -243,13 +244,14 @@
         
         <!-- Testimonials -->
         <section class="py-16 mt-[64px] mb-[64px] ">
-            <div class="container mx-auto px-4 relative ">
-                <div class="text-center mb-12 absolute top-[-20%] left-1/2 transform -translate-x-1/2 z-[-1]">
-                    <h2 class="text-6xl font-[900] text-blue-100 [-webkit-text-stroke:2px_#07075c] [text-shadow:2px_2px_8px_#00008c] ">What Our Clients Say</h2>
+             <div class="container mx-auto px-0 sm:px-4 relative ">
+                <h1 class=" text-center w-full mt-5 text-blue-600 text-3xl  font-[900] text-blue-400 block sm:hidden ">What Our Clients Say</h1>
+                <div class="text-center  w-full mb-12 absolute top-[-15%] sm:top-[-28%] left-1/2 transform -translate-x-1/2 z-[-1] hidden sm:block">
+                    <h2 class="mt-5 text-blue-600 text-6xl font-[900] text-blue-100 [-webkit-text-stroke:2px_#07075c] [text-shadow:0px_0px_0px_#00008c] ">What Our Clients Say</h2>
                     <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4"></div>
                 </div>
                 
-                <div class="grid md:grid-cols-3 gap-8 mt-[54px]">
+                <div class="grid md:grid-cols-3 gap-8 mt-[54px]"> 
                     <!-- Testimonial 1 -->
                     <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
                         <div class="flex items-center mb-4">
@@ -317,9 +319,9 @@
         </section>
         
         <!-- Call to Action -->
-        <section class="action py-16 w-[60%] mx-auto rounded-2xl mb-[41px] bg-blue-800">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-4xl font-bold text-white [letter-spacing:0.3px] mb-4">Ready to Work With Us?</h2>
+        <section class="action py-16 w-full  sm:w-[60%] mx-auto rounded-2xl mb-[41px] bg-blue-800">
+            <div class="container mx-auto px-6 sm:px-4 text-center">
+                <h2 class=" text-2xl sm:text-4xl font-bold text-white [letter-spacing:0.3px] mb-4">Ready to Work With Us?</h2>
                 <p class="text-p oblique max-w-2xl mx-auto mb-8">
                     Whether you're looking to buy, sell, or invest, our team is ready to provide you with exceptional service tailored to your needs.
                 </p>
@@ -332,7 +334,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 px-10">
+    <footer class="bg-gray-900 text-white py-12 px-3 sm:px-10">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8">
                 <div>

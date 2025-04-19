@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTrigger: {
       trigger: '.text-royal-blue',
       start: 'top 80%',
+      
+      end: 'top 60%',
+      scrub:2,
       toggleActions: 'play none none none'
     },
     duration: 1,
@@ -56,6 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTrigger: {
       trigger: '.w-24.h-1.bg-yellow-500',
       start: 'top 85%',
+      end: 'top 60%',
+      scrub: 2,
       toggleActions: 'play none none none'
     },
     duration: 0.8,
@@ -66,28 +71,69 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // PROPERTY CARDS ANIMATION
-gsap.from(".property-card", {
-    y:50,
-    opacity:0.5,
-    scrollTrigger:{
-        scroll:"body",
-        trigger:".property-card",
-        start:"top 80%",
-        end:"top 60%",
-        scrub:1,
+// First, make sure to include the necessary GSAP libraries
+// Add these to your HTML head section:
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Register ScrollTrigger plugin
+  gsap.registerPlugin(ScrollTrigger);
+  
+  // Set initial state for all property cards - hidden
+  gsap.set('.property-card, .propertys-card', { 
+    opacity: 0, 
+    y: 50,
+    scale: 0.95
+  });
+  
+  // Select all property cards
+  const propertyCards = document.querySelectorAll('.property-card, .propertys-card');
+  
+  // Create a timeline for the animation
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#propertyGrid',
+      start: 'top 80%', // Start animation when the top of the grid hits 80% from the top of viewport
+      end: 'bottom 20%', // End animation when bottom of grid reaches 20% from top of viewport
+      toggleActions: 'play none none reverse', // play on enter, reverse on leave
+      markers: false // Set to true for debugging
     }
-})
-gsap.from(".propertys-card", {
-    y:50,
-    opacity:0.5,
-    scrollTrigger:{
-        scroll:"body",
-        trigger:".propertys-card",
-        start:"top 85%",
-        end:"top 70%",
-        scrub:1,
-    }
-})
+  });
+  
+  // Add each card to the timeline with a stagger effect
+  tl.to(propertyCards, {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    duration: 0.6,
+    stagger: 0.15, // Time between each card animation
+    ease: 'power2.out',
+    clearProps: 'all' // Clean up inline styles after animation
+  });
+  
+  // Optional: Add a little bounce effect to cards as they appear
+  propertyCards.forEach((card, index) => {
+    ScrollTrigger.create({
+      trigger: card,
+      start: 'top 85%',
+      onEnter: () => {
+        gsap.to(card, {
+          scale: 1.03,
+          duration: 0.3,
+          onComplete: () => {
+            gsap.to(card, {
+              scale: 1,
+              duration: 0.2
+            });
+          }
+        });
+      },
+      once: true // Only trigger once
+    });
+  });
+});
 
 
   // PREMIUM LOCALITIES SECTION
@@ -202,9 +248,9 @@ gsap.from(".propertys-card", {
     scrollTrigger: {
       trigger: '.browse',
       start: 'top 85%', // Start a bit earlier
+      end: 'top 60%', // End a bit later
+      scrub:2,
       toggleActions: 'play none none reverse',
-      once: true, // Animation plays only once
-      markers: false // Set to true for debugging
     },
     duration: 1,
     opacity: 1,
@@ -233,10 +279,12 @@ gsap.from(".propertys-card", {
   });
 
   // RECENTLY SOLD PROPERTIES SECTION
-  gsap.from('.text-\\[43px\\].font-\\[900\\]', {
+  gsap.from('.recentlysold', {
     scrollTrigger: {
-      trigger: '.text-\\[43px\\].font-\\[900\\]',
+      trigger: '.recentlysold',
       start: 'top 80%',
+      end: 'top 60%',
+      scrub: 2,
       toggleActions: 'play none none none'
     },
     duration: 1,

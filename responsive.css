@@ -1,0 +1,9 @@
+@media screen and (max-width: 600px) {
+    .stroke {
+        -webkit-text-stroke: 0px black;
+    }
+    .stroke-white{
+        -webkit-text-stroke: 0px rgb(255, 255, 255);
+        text-shadow: 2px 2px 8px rgb(138, 138, 138);
+    }
+}

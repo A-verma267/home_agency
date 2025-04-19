@@ -18,7 +18,7 @@
 
 <body class="font-sans text-gray-800 bg-gray-200">
     <!-- Header Section -->
-    <header class="bg-white shadow-md sticky top-0 z-[999] px-10">
+    <header class="bg-white shadow-md sticky top-0 z-[999] px-0 sm:px-10">
         <div class="container mx-auto px-4">
             <nav class="flex justify-between items-center py-4">
                 <div class="flex items-center">
@@ -66,21 +66,79 @@
     <!-- Services Section -->
 
     <section id="services" class="mb-[43px]">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto px-3 sm:px-6">
             <div class="w-full h-[40vh] bg-blue-800 flex items-center justify-around relative mb-[40px]">
                 <div class="text-center mb-16 ">
                     <h2
-                        class="serviceheading text-4xl [text-shadow:2px_2px_8px_black] [-webkit-text-stroke:1px_black] font-bold mb-4 text-gray-50">
+                        class="serviceheading text-4xl [text-shadow:2px_2px_8px_black] [-webkit-text-stroke:0px_black] sm:[-webkit-text-stroke:1px_black] font-bold mb-4 text-gray-50">
                         Our Services</h2>
-                    <p class="servicesp text-gray-200 italic max-w-2xl mx-auto">We offer a comprehensive range of services to help
+                    <p class="servicesp text-gray-200 italic px-4 sm:px-0 max-w-2xl mx-auto">We offer a comprehensive range of services to help
                         you find,
                         finance, and move into your dream home with confidence.</p>
                 </div>
             </div>
 
-            <div class="w-full bg-white mx-auto relative">
-                <img class="absolute w-full h-full object-cover opacity-20" src="./images/servicesbg.jpg" alt="">
-                <section id="services" class="py-16  min-h-[80vh] ">
+            <div class="w-full mx-auto relative">
+                <img class="absolute w-full h-full object-cover opacity-20 hidden sm:block" src="./images/servicesbg.jpg" alt="">
+                <section id="services" class="py-16  min-h-[80vh] block md:hidden ">
+                    <div class="w-[90%] mx-auto border-2 border-blue-600 bg-white h-[301px] py-3 rounded-2xl shadow-lg shadow-black flex flex-col items-center justify-around mb-10 ">
+                        <div class="w-[96%] h-[80%] mx-auto overflow-hidden rounded-2xl ">
+                            <img class="w-full h-full object-cover" src="./images/propertysearch.png" alt="">
+                        </div>
+                        <div class=" flex items-center justify-between">
+                            <i class="fas fa-search text-2xl text-yellow-500 mr-6"></i>
+                            <h3 class="text-xl font-bold text-blue-800">Property Search</h3>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto border-2 border-blue-600 bg-white h-[301px] py-3 rounded-2xl shadow-lg shadow-black flex flex-col items-center justify-around mb-10 ">
+                        <div class="w-[96%] h-[80%] mx-auto overflow-hidden rounded-2xl ">
+                            <img class="w-full h-full object-cover" src="./images/personalizeduser.jpg" alt="">
+                        </div>
+                        <div class=" flex items-center justify-between">
+                            <i class="fas fa-handshake text-2xl text-yellow-500 mr-6"></i>
+                            <h3 class="text-xl font-bold text-blue-800">Personalized Guidance</h3>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto border-2 border-blue-600 bg-white h-[301px] py-3 rounded-2xl shadow-lg shadow-black flex flex-col items-center justify-around mb-10 ">
+                        <div class="w-[96%] h-[80%] mx-auto overflow-hidden rounded-2xl ">
+                            <img class="w-full h-full object-cover" src="./images/propertyviewing.jpg" alt="">
+                        </div>
+                        <div class=" flex items-center justify-between">
+                            <i class="fas fa-home text-2xl text-yellow-500 mr-6"></i>
+                            <h3 class="text-xl font-bold text-blue-800">Property Viewing</h3>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto border-2 border-blue-600 bg-white h-[301px] py-3 rounded-2xl shadow-lg shadow-black flex flex-col items-center justify-around mb-10 ">
+                        <div class="w-[96%] h-[80%] mx-auto overflow-hidden rounded-2xl ">
+                            <img class="w-full h-full object-cover" src="./images/marketanalyist.jpg" alt="">
+                        </div>
+                        <div class=" flex items-center justify-between">
+                            <i class="fas fa-chart-line text-2xl text-yellow-500 mr-6"></i>
+                            <h3 class="text-xl font-bold text-blue-800">Market Analysis</h3>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto border-2 border-blue-600 bg-white h-[301px] py-3 rounded-2xl shadow-lg shadow-black flex flex-col items-center justify-around mb-10 ">
+                        <div class="w-[96%] h-[80%] mx-auto overflow-hidden rounded-2xl ">
+                            <img class="w-full h-full object-cover" src="./images/negotiation.jpg" alt="">
+                        </div>
+                        <div class=" flex items-center justify-between">
+                            <i class="fas fa-file-signature text-2xl text-yellow-500 mr-6"></i>
+                            <h3 class="text-xl font-bold text-blue-800">Negotiation &
+                                Paperwork</h3>
+                        </div>
+                    </div>
+                    <div class="w-[90%] mx-auto border-2 border-blue-600 bg-white h-[301px] py-3 rounded-2xl shadow-lg shadow-black flex flex-col items-center justify-around mb-10 ">
+                        <div class="w-[96%] h-[80%] mx-auto overflow-hidden rounded-2xl ">
+                            <img class="w-full h-full object-cover" src="./images/financilaassistance.jpg" alt="">
+                        </div>
+                        <div class=" flex items-center justify-between">
+                            <i class="fas fa-coins text-2xl text-yellow-500 mr-6"></i>
+                            <h3 class="text-xl font-bold text-blue-800">Financial Assistance</h3>
+                        </div>
+                    </div>
+
+                </section>
+                <section id="services" class="py-16  min-h-[80vh] hidden md:block">
                     <div class="container mx-auto px-4">
     
                         <div class="flowchart-container relative max-w-6xl mx-auto">
@@ -202,6 +260,7 @@
 
 
     <!-- How It Works Section -->
+     
     <section id="how-it-works" class="py-20 bg-blue-50 my-[63px]">
         <div class="container mx-auto px-6">
             <div class="text-center mb-[130px]">
@@ -230,9 +289,6 @@
                             wide range of properties. Filter your search based on location, type of property, budget,
                             and other preferences to find homes that best match your criteria.</p>
                     </div>
-                    <div
-                        class="step-number bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg absolute left-1/2 transform -translate-x-1/2 z-10">
-                        1</div>
                     <div class="lg:w-[45%] lg:ml-auto">
                         <div class="p-6 rounded-lg flex justify-center">
                             <!-- Search/Browse Animation SVG -->
@@ -308,9 +364,6 @@
                             </svg>
                         </div>
                     </div>
-                    <div
-                        class="step-number bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg absolute left-1/2 transform -translate-x-1/2 z-10">
-                        2</div>
                     <div class="lg:w-[45%] mb-8 lg:mb-0 lg:text-left lg:ml-auto">
                         <h3 class="text-xl font-bold text-stephead [text-shadow:1px_1px_5px_grey] mb-2"><span
                                 class="text-[17px] mr-[14px] text-blue-800">Step 2:</span> Experience Your Future Home
@@ -333,9 +386,6 @@
                             trends, or financing options, our team is dedicated to ensuring you have all the information
                             you need.</p>
                     </div>
-                    <div
-                        class="step-number bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg absolute left-1/2 transform -translate-x-1/2 z-10">
-                        3</div>
                     <div class="lg:w-[45%] lg:ml-auto">
                         <div class="p-6 rounded-lg flex justify-center">
                             <!-- Consultant Animation SVG -->
@@ -410,9 +460,6 @@
                             </svg>
                         </div>
                     </div>
-                    <div
-                        class="step-number bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg absolute left-1/2 transform -translate-x-1/2 z-10">
-                        4</div>
                     <div class="lg:w-[45%] mb-8 lg:mb-0 lg:text-left lg:ml-auto">
                         <h3 class="text-xl font-bold text-stephead [text-shadow:1px_1px_5px_grey] mb-2"><span
                                 class="text-[17px] mr-[14px] text-blue-800">Step 4:</span> Select the Perfect Home</h3>
@@ -432,9 +479,6 @@
                             seamless transaction. From coordinating with legal experts to managing documentation, our
                             team will support you through every step of the closing process.</p>
                     </div>
-                    <div
-                        class="step-number bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shadow-lg absolute left-1/2 transform -translate-x-1/2 z-10">
-                        5</div>
                     <div class="lg:w-[45%] lg:ml-auto">
                         <div class="p-6 rounded-lg flex justify-center">
                             <!-- Transaction Completion Animation SVG -->
@@ -507,9 +551,9 @@
         </div>
     </section>
 
-    <section class="action py-16 w-[60%] mx-auto rounded-2xl mb-[41px] bg-blue-800">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold text-white [letter-spacing:0.3px] mb-4">Ready to Work With Us?</h2>
+    <section class="action py-16 w-full  sm:w-[60%] mx-auto rounded-2xl mb-[41px] bg-blue-800">
+        <div class="container mx-auto px-6 sm:px-4 text-center">
+            <h2 class=" text-2xl sm:text-4xl font-bold text-white [letter-spacing:0.3px] mb-4">Ready to Work With Us?</h2>
             <p class="text-p oblique max-w-2xl mx-auto mb-8">
                 Whether you're looking to buy, sell, or invest, our team is ready to provide you with exceptional service tailored to your needs.
             </p>

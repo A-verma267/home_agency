@@ -7,14 +7,14 @@
     <title>Properties | Premier Homes</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    
- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 </head>
 
 <body class="font-sans bg-gray-100">
     <!-- Navigation -->
-    <header class="bg-white shadow-md sticky top-0 z-[999] px-10">
+    <header class="bg-white shadow-md sticky top-0 z-[999] px-3 sm:px-10">
         <div class="container mx-auto px-4">
             <nav class="flex justify-between items-center py-4">
                 <div class="flex items-center">
@@ -23,12 +23,17 @@
                     </a>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Home</a>
+                    <a href="index.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Home</a>
                     <a href="properties.html"
                         class="text-blue-800 font-medium border-b-2 border-blue-800 hover:text-[17px] transition-all duration-200">Properties</a>
-                    <a href="about.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">About Us</a>
-                    <a href="services.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Services</a>
-                    <a href="contact.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Contact</a>
+                    <a href="about.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">About
+                        Us</a>
+                    <a href="services.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Services</a>
+                    <a href="contact.html"
+                        class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200">Contact</a>
                 </div>
                 <div class="md:hidden">
                     <button id="menuButton" class="text-gray-600 hover:text-[17px] transition-transform duration-200">
@@ -36,12 +41,17 @@
                     </button>
                     <div id="mobileMenu" class="hidden absolute top-16 left-0 right-0 bg-white shadow-md">
                         <div class="flex flex-col p-4">
-                            <a href="index.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200 py-2 ">Home</a>
-                            <a href="properties.html" class="text-blue-800 font-medium hover:translate-x-2 hover:text-[17px] py-2 transition-all duration-200">Properties</a>
-                            <a href="about.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200 py-2 ">About Us</a>
+                            <a href="index.html"
+                                class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200 py-2 ">Home</a>
+                            <a href="properties.html"
+                                class="text-blue-800 font-medium hover:translate-x-2 hover:text-[17px] py-2 transition-all duration-200">Properties</a>
+                            <a href="about.html"
+                                class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200 py-2 ">About
+                                Us</a>
                             <a href="services.html"
                                 class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200 py-2 transition">Services</a>
-                            <a href="contact.html" class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200 py-2 ">Contact</a>
+                            <a href="contact.html"
+                                class="text-gray-600 hover:text-blue-800 hover:font-medium hover:text-[17px] transition-all duration-200 py-2 ">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -49,38 +59,42 @@
         </div>
     </header>
 
-    <main class="px-10">
+    <main class="px-4 sm:px-10">
         <!-- Page Title -->
-        <section class="bg-blue-900 text-white py-12 flex items-center justify-between h-[191px]">
-            <div class="container mx-auto px-4 text-center w-[40%]">
-                <h1 class="text-4xl font-bold">Our Properties</h1>
-                <p class="mt-2 text-lg italic text-gray-200">Find your perfect home among our exclusive listings</p>
+        <section
+            class="bg-blue-900 text-white py-8 sm:py-12 flex flex-col sm:flex-row items-center justify-between sm:h-[191px]">
+            <div class="container mx-auto px-4 text-center sm:w-[40%] mb-4 sm:mb-0">
+                <h1 class="text-3xl sm:text-4xl font-bold">Our Properties</h1>
+                <p class="mt-2 text-base sm:text-lg italic text-gray-200">Find your perfect home among our exclusive
+                    listings</p>
             </div>
-            <img class="h-[146%] w-[20%] object-cover mr-[204px] " src="./images/familyhome.jpg" alt="">
+            <img class="w-[50%] sm:w-[20%] sm:h-[146%] object-cover sm:mr-[204px] max-h-48 sm:max-h-none rounded-lg sm:rounded-none"
+                src="./images/familyhome.jpg" alt="">
         </section>
 
         <!-- Featured Listings -->
-        <section class="py-12 mb-[51px]">
+        <section class="py-8 sm:py-12 mb-8 sm:mb-[51px]">
             <div class="container mx-auto">
                 <!-- Header with view switching buttons -->
-                <div class=" mb-24">
+                <div class="mb-12 sm:mb-24">
                     <h2
-                        class="text-2xl font-bold text-[47px] mt-[43px] text-center [text-shadow:2px_2px_8px_grey] font-[900] [-webkit-text-stroke:1px_#f1f1f1] text-royal-blue">
+                        class="text-3xl sm:text-[47px] mt-6 sm:mt-[43px] text-center [text-shadow:2px_2px_8px_grey] font-[900] [-webkit-text-stroke:0px_black] sm:[-webkit-text-stroke:1px_#f1f1f1] text-royal-blue">
                         Featured Listings</h2>
-                        <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4"></div>
-
+                    <div class="w-16 sm:w-24 h-1 bg-yellow-500 mx-auto mt-4"></div>
                 </div>
 
                 <!-- Property grid container -->
-                <div id="propertyGrid" class="grid md:grid-cols-3 gap-x-8 gap-y-12 mx-auto max-w-7xl">
+                <div id="propertyGrid"
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-x-8 sm:gap-y-12 mx-auto max-w-7xl">
                     <!-- Property Card 1 -->
                     <div class="property-card bg-white rounded-lg shadow-lg hover:shadow-2xl overflow-hidden transition-all duration-300"
-                        style="height: 380px;">
-                        <img src="./images/downtownapartment.jpg" alt="Property" class="card-image w-full object-cover">
+                        style="height: auto; max-height: 380px;">
+                        <img src="./images/downtownapartment.jpg" alt="Property"
+                            class="card-image w-full object-cover h-48">
                         <div class="p-4">
                             <h3 class="font-bold text-lg mb-2">Modern Downtown Apartment</h3>
                             <p class="text-green-600 font-semibold mb-2 card-title">$2,400/mo</p>
-                            <div class="flex justify-between text-gray-600  card-content">
+                            <div class="flex justify-between text-gray-600 text-sm sm:text-base card-content">
                                 <span><i class="fas fa-bed mr-1"></i> 2 beds</span>
                                 <span><i class="fas fa-bath mr-1"></i> 2 baths</span>
                                 <span><i class="fas fa-ruler-combined mr-1"></i> 1,200 sqft</span>
@@ -90,12 +104,12 @@
 
                     <!-- Property Card 2 -->
                     <div class="property-card bg-white rounded-lg shadow-lg hover:shadow-2xl overflow-hidden transition-all duration-300"
-                        style="height: 380px;">
-                        <img src="./images/familysuburban.jpg" alt="Property" class="w-full object-cover">
+                        style="height: auto; max-height: 380px;">
+                        <img src="./images/familysuburban.jpg" alt="Property" class="w-full object-cover h-48">
                         <div class="p-4">
                             <h3 class="font-bold text-lg mb-2">Luxury Penthouse Suite</h3>
                             <p class="text-green-600 font-semibold mb-2">$3,500/mo</p>
-                            <div class="flex justify-between text-gray-600">
+                            <div class="flex justify-between text-gray-600 text-sm sm:text-base">
                                 <span><i class="fas fa-bed mr-1"></i> 3 beds</span>
                                 <span><i class="fas fa-bath mr-1"></i> 2.5 baths</span>
                                 <span><i class="fas fa-ruler-combined mr-1"></i> 1,800 sqft</span>
@@ -105,12 +119,12 @@
 
                     <!-- Property Card 3 -->
                     <div class="property-card bg-white rounded-lg shadow-lg hover:shadow-2xl overflow-hidden transition-all duration-300"
-                        style="height: 380px;">
-                        <img src="./images/moderndesign.jpg" alt="Property" class="w-full object-cover">
+                        style="height: auto; max-height: 380px;">
+                        <img src="./images/moderndesign.jpg" alt="Property" class="w-full object-cover h-48">
                         <div class="p-4">
                             <h3 class="font-bold text-lg mb-2">Cozy Studio Apartment</h3>
                             <p class="text-green-600 font-semibold mb-2">$1,100/mo</p>
-                            <div class="flex justify-between text-gray-600">
+                            <div class="flex justify-between text-gray-600 text-sm sm:text-base">
                                 <span><i class="fas fa-bed mr-1"></i> 1 bed</span>
                                 <span><i class="fas fa-bath mr-1"></i> 1 bath</span>
                                 <span><i class="fas fa-ruler-combined mr-1"></i> 600 sqft</span>
@@ -120,12 +134,12 @@
 
                     <!-- Property Card 4 -->
                     <div class="propertys-card bg-white rounded-lg shadow-lg hover:shadow-2xl overflow-hidden transition-all duration-300"
-                        style="height: 380px;">
-                        <img src="./images/house.jpg" alt="Property" class="w-full object-cover">
+                        style="height: auto; max-height: 380px;">
+                        <img src="./images/house.jpg" alt="Property" class="w-full object-cover h-48">
                         <div class="p-4">
                             <h3 class="font-bold text-lg mb-2">Suburban Family Home</h3>
                             <p class="text-green-600 font-semibold mb-2">$3,200/mo</p>
-                            <div class="flex justify-between text-gray-600">
+                            <div class="flex justify-between text-gray-600 text-sm sm:text-base">
                                 <span><i class="fas fa-bed mr-1"></i> 4 beds</span>
                                 <span><i class="fas fa-bath mr-1"></i> 3 baths</span>
                                 <span><i class="fas fa-ruler-combined mr-1"></i> 2,400 sqft</span>
@@ -135,12 +149,12 @@
 
                     <!-- Property Card 5 -->
                     <div class="propertys-card bg-white rounded-lg shadow-lg hover:shadow-2xl overflow-hidden transition-all duration-300"
-                        style="height: 380px;">
-                        <img src="./images/moderndesign.jpg" alt="Property" class="w-full object-cover">
+                        style="height: auto; max-height: 380px;">
+                        <img src="./images/moderndesign.jpg" alt="Property" class="w-full object-cover h-48">
                         <div class="p-4">
                             <h3 class="font-bold text-lg mb-2">Riverfront Condo</h3>
                             <p class="text-green-600 font-semibold mb-2">$2,800/mo</p>
-                            <div class="flex justify-between text-gray-600">
+                            <div class="flex justify-between text-gray-600 text-sm sm:text-base">
                                 <span><i class="fas fa-bed mr-1"></i> 2 beds</span>
                                 <span><i class="fas fa-bath mr-1"></i> 2 baths</span>
                                 <span><i class="fas fa-ruler-combined mr-1"></i> 1,400 sqft</span>
@@ -150,12 +164,12 @@
 
                     <!-- Property Card 6 -->
                     <div class="propertys-card bg-white rounded-lg shadow-lg hover:shadow-2xl overflow-hidden transition-all duration-300"
-                        style="height: 380px;">
-                        <img src="./images/mountainhouse.jpg" alt="Property" class="w-full object-cover">
+                        style="height: auto; max-height: 380px;">
+                        <img src="./images/mountainhouse.jpg" alt="Property" class="w-full object-cover h-48">
                         <div class="p-4">
                             <h3 class="font-bold text-lg mb-2">Mountain View Cabin</h3>
                             <p class="text-green-600 font-semibold mb-2">$1,800/mo</p>
-                            <div class="flex justify-between text-gray-600">
+                            <div class="flex justify-between text-gray-600 text-sm sm:text-base">
                                 <span><i class="fas fa-bed mr-1"></i> 2 beds</span>
                                 <span><i class="fas fa-bath mr-1"></i> 1 bath</span>
                                 <span><i class="fas fa-ruler-combined mr-1"></i> 900 sqft</span>
@@ -164,34 +178,36 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- NEW SECTION: Premium Localities -->
-        <section class="py-16 bg-gradient-to-br from-blue-900 to-blue-700 px-10">
+        <section class="py-10 sm:py-16 bg-gradient-to-br from-blue-900 to-blue-700 px-4 sm:px-10">
             <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-white text-[36px] mb-[26px]">Premium Localities</h2>
-                    <p class="text-blue-100 mt-2 max-w-2xl mx-auto">Discover our top-selling neighborhoods with
+                <div class="text-center mb-8 sm:mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white sm:text-[36px] mb-4 sm:mb-[26px]">Premium
+                        Localities</h2>
+                    <p class="text-blue-100 mt-2 max-w-2xl mx-auto text-sm sm:text-base">Discover our top-selling
+                        neighborhoods with
                         exceptional living standards and prime investment opportunities</p>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                     <!-- Top Locality 1 -->
                     <div
                         class="bg-white rounded-xl overflow-hidden shadow-xl flex flex-col md:flex-row hover:shadow-2xl transition duration-300">
-                        <div class="md:w-2/5 relative">
+                        <div class="w-full md:w-2/5 relative">
                             <img src="./images/villa.jpg" alt="Beverly Hills Community"
-                                class="w-full h-full object-cover">
+                                class="w-full h-48 sm:h-full object-cover">
                             <div
-                                class="absolute top-0 left-0 bg-yellow-500 text-white font-bold py-1 px-3 m-3 rounded-full">
+                                class="absolute top-0 left-0 bg-yellow-500 text-white font-bold py-1 px-3 m-3 rounded-full text-xs sm:text-sm">
                                 TOP RATED
                             </div>
                         </div>
-                        <div class="md:w-3/5 p-6">
+                        <div class="w-full md:w-3/5 p-4 sm:p-6">
                             <div class="flex justify-between items-center mb-2">
-                                <h3 class="font-bold text-xl text-gray-800">Beverly Hills Community</h3>
-                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-semibold">98%
+                                <h3 class="font-bold text-lg sm:text-xl text-gray-800">Beverly Hills Community</h3>
+                                <span
+                                    class="bg-blue-100 text-blue-800 text-xs px-2 sm:px-3 py-1 rounded-full font-semibold">98%
                                     SOLD</span>
                             </div>
                             <div class="flex items-center mb-4">
@@ -200,31 +216,32 @@
                                 <i class="fas fa-star text-yellow-500"></i>
                                 <i class="fas fa-star text-yellow-500"></i>
                                 <i class="fas fa-star text-yellow-500"></i>
-                                <span class="text-gray-600 ml-2">(128 Reviews)</span>
+                                <span class="text-gray-600 ml-2 text-xs sm:text-sm">(128 Reviews)</span>
                             </div>
-                            <p class="text-gray-600 mb-4">Premium gated community with luxury amenities including tennis
+                            <p class="text-gray-600 mb-4 text-sm sm:text-base">Premium gated community with luxury
+                                amenities including tennis
                                 courts, spa, and 24/7 security. Average property value increased by 12% in the last
                                 year.</p>
                             <div class="grid grid-cols-2 gap-2 mb-4">
-                                <div class="flex items-center text-gray-700">
+                                <div class="flex items-center text-gray-700 text-xs sm:text-sm">
                                     <i class="fas fa-building mr-2 text-blue-800"></i>
                                     <span>42 Properties</span>
                                 </div>
-                                <div class="flex items-center text-gray-700">
+                                <div class="flex items-center text-gray-700 text-xs sm:text-sm">
                                     <i class="fas fa-tree mr-2 text-blue-800"></i>
                                     <span>8 Parks</span>
                                 </div>
-                                <div class="flex items-center text-gray-700">
+                                <div class="flex items-center text-gray-700 text-xs sm:text-sm">
                                     <i class="fas fa-utensils mr-2 text-blue-800"></i>
                                     <span>12 Restaurants</span>
                                 </div>
-                                <div class="flex items-center text-gray-700">
+                                <div class="flex items-center text-gray-700 text-xs sm:text-sm">
                                     <i class="fas fa-graduation-cap mr-2 text-blue-800"></i>
                                     <span>5 Schools</span>
                                 </div>
                             </div>
                             <a href="#"
-                                class="inline-block bg-blue-800 text-white px-6 py-2 rounded-lg transition hover:bg-blue-700">Explore
+                                class="inline-block bg-blue-800 text-white px-4 sm:px-6 py-2 rounded-lg transition hover:bg-blue-700 text-sm sm:text-base">Explore
                                 Area</a>
                         </div>
                     </div>
@@ -232,18 +249,19 @@
                     <!-- Top Locality 2 -->
                     <div
                         class="bg-white rounded-xl overflow-hidden shadow-xl flex flex-col md:flex-row hover:shadow-2xl transition duration-300">
-                        <div class="md:w-2/5 relative">
-                            <img src="./images/house3.jpg" alt="Riverfront Estates" class="w-full h-full object-cover">
+                        <div class="w-full md:w-2/5 relative">
+                            <img src="./images/house3.jpg" alt="Riverfront Estates"
+                                class="w-full h-48 sm:h-full object-cover">
                             <div
-                                class="absolute top-0 left-0 bg-blue-600 text-white font-bold py-1 px-3 m-3 rounded-full">
+                                class="absolute top-0 left-0 bg-blue-600 text-white font-bold py-1 px-3 m-3 rounded-full text-xs sm:text-sm">
                                 TRENDING
                             </div>
                         </div>
-                        <div class="md:w-3/5 p-6">
+                        <div class="w-full md:w-3/5 p-4 sm:p-6">
                             <div class="flex justify-between items-center mb-2">
-                                <h3 class="font-bold text-xl text-gray-800">Riverfront Estates</h3>
+                                <h3 class="font-bold text-lg sm:text-xl text-gray-800">Riverfront Estates</h3>
                                 <span
-                                    class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full font-semibold">NEW
+                                    class="bg-green-100 text-green-800 text-xs px-2 sm:px-3 py-1 rounded-full font-semibold">NEW
                                     PHASE</span>
                             </div>
                             <div class="flex items-center mb-4">
@@ -252,63 +270,66 @@
                                 <i class="fas fa-star text-yellow-500"></i>
                                 <i class="fas fa-star text-yellow-500"></i>
                                 <i class="fas fa-star-half-alt text-yellow-500"></i>
-                                <span class="text-gray-600 ml-2">(93 Reviews)</span>
+                                <span class="text-gray-600 ml-2 text-xs sm:text-sm">(93 Reviews)</span>
                             </div>
-                            <p class="text-gray-600 mb-4">Scenic waterfront community with modern architecture and
+                            <p class="text-gray-600 mb-4 text-sm sm:text-base">Scenic waterfront community with modern
+                                architecture and
                                 eco-friendly designs. Features private docks, walking trails, and community boathouse.
                             </p>
                             <div class="grid grid-cols-2 gap-2 mb-4">
-                                <div class="flex items-center text-gray-700">
+                                <div class="flex items-center text-gray-700 text-xs sm:text-sm">
                                     <i class="fas fa-building mr-2 text-blue-800"></i>
                                     <span>36 Properties</span>
                                 </div>
-                                <div class="flex items-center text-gray-700">
+                                <div class="flex items-center text-gray-700 text-xs sm:text-sm">
                                     <i class="fas fa-water mr-2 text-blue-800"></i>
                                     <span>Waterfront</span>
                                 </div>
-                                <div class="flex items-center text-gray-700">
+                                <div class="flex items-center text-gray-700 text-xs sm:text-sm">
                                     <i class="fas fa-dumbbell mr-2 text-blue-800"></i>
                                     <span>Fitness Center</span>
                                 </div>
-                                <div class="flex items-center text-gray-700">
+                                <div class="flex items-center text-gray-700 text-xs sm:text-sm">
                                     <i class="fas fa-shopping-bag mr-2 text-blue-800"></i>
                                     <span>Shopping Mall</span>
                                 </div>
                             </div>
                             <a href="#"
-                                class="inline-block bg-blue-800 text-white px-6 py-2 rounded-lg transition hover:bg-blue-700">Explore
+                                class="inline-block bg-blue-800 text-white px-4 sm:px-6 py-2 rounded-lg transition hover:bg-blue-700 text-sm sm:text-base">Explore
                                 Area</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Locality Statistics -->
-                <div class="mt-12 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-white mb-6">Why These Locations Are Top Performers</h3>
-                    <div class="grid md:grid-cols-4 gap-6 text-center">
-                        <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-4">
-                            <div class="text-4xl font-bold text-yellow-400 mb-2">12%</div>
-                            <p class="text-white">Average Annual Value Growth</p>
+                <div
+                    class="mt-8 sm:mt-12 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-4 sm:p-8 shadow-lg">
+                    <h3 class="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Why These Locations Are Top
+                        Performers</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
+                        <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-3 sm:p-4">
+                            <div class="text-2xl sm:text-4xl font-bold text-yellow-400 mb-1 sm:mb-2">12%</div>
+                            <p class="text-white text-xs sm:text-sm">Average Annual Value Growth</p>
                         </div>
-                        <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-4">
-                            <div class="text-4xl font-bold text-yellow-400 mb-2">96%</div>
-                            <p class="text-white">Resident Satisfaction Rate</p>
+                        <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-3 sm:p-4">
+                            <div class="text-2xl sm:text-4xl font-bold text-yellow-400 mb-1 sm:mb-2">96%</div>
+                            <p class="text-white text-xs sm:text-sm">Resident Satisfaction Rate</p>
                         </div>
-                        <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-4">
-                            <div class="text-4xl font-bold text-yellow-400 mb-2">24/7</div>
-                            <p class="text-white">Security & Maintenance</p>
+                        <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-3 sm:p-4">
+                            <div class="text-2xl sm:text-4xl font-bold text-yellow-400 mb-1 sm:mb-2">24/7</div>
+                            <p class="text-white text-xs sm:text-sm">Security & Maintenance</p>
                         </div>
-                        <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-4">
-                            <div class="text-4xl font-bold text-yellow-400 mb-2">15+</div>
-                            <p class="text-white">Premium Amenities</p>
+                        <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-3 sm:p-4">
+                            <div class="text-2xl sm:text-4xl font-bold text-yellow-400 mb-1 sm:mb-2">15+</div>
+                            <p class="text-white text-xs sm:text-sm">Premium Amenities</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Call to Action -->
-                <div class="text-center mt-12">
+                <div class="text-center mt-8 sm:mt-12">
                     <a href="/contact.html"
-                        class="inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold px-8 py-3 rounded-full transition transform hover:scale-105 shadow-lg">
+                        class="inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold px-6 sm:px-8 py-2 sm:py-3 rounded-full transition transform hover:scale-105 shadow-lg text-sm sm:text-base">
                         Schedule A Tour <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -316,24 +337,25 @@
         </section>
 
         <!-- Property Categories -->
-        <section class="py-12 mt-[64px]">
-            <div class="container mx-auto px-4 ">
-                <h1 class="browse text-4xl font-bold text-gray-800 text-royal-blue text-center [text-shadow:2px_2px_8px_#cbcbcb]">
+        <section class="py-8 sm:py-12 mt-8 sm:mt-[64px]">
+            <div class="container mx-auto px-4">
+                <h1
+                    class="browse text-3xl sm:text-4xl font-bold text-gray-800 text-royal-blue text-center [text-shadow:2px_2px_8px_#cbcbcb]">
                     Explore Our Property Categories</h1>
-                    <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4 mb-[63px]"></div>
+                <div class="w-16 sm:w-24 h-1 bg-yellow-500 mx-auto mt-4 mb-8 sm:mb-[63px]"></div>
 
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20 max-w-7xl mx-auto">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-x-10 sm:gap-y-20 max-w-7xl mx-auto">
                     <!-- Villas Category -->
                     <div class="relative group overflow-hidden rounded-lg shadow-lg">
                         <img src="./images/mdoernvilla2.jpg" alt="Villas"
-                            class="w-full h-64 object-cover transition group-hover:scale-110">
+                            class="w-full h-48 sm:h-64 object-cover transition group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-80"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold mb-2">Villas</h3>
-                            <p class="mb-4">17 Properties</p>
+                        <div class="absolute bottom-0 left-0 p-4 sm:p-6 text-white">
+                            <h3 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Villas</h3>
+                            <p class="mb-3 sm:mb-4 text-sm sm:text-base">17 Properties</p>
                             <a href="#"
-                                class="inline-block bg-white text-blue-800 px-4 py-2 rounded-lg transition hover:bg-blue-50">View
+                                class="inline-block bg-white text-blue-800 px-3 sm:px-4 py-1 sm:py-2 rounded-lg transition hover:bg-blue-50 text-sm sm:text-base">View
                                 All</a>
                         </div>
                     </div>
@@ -341,13 +363,13 @@
                     <!-- Apartments Category -->
                     <div class="relative group overflow-hidden rounded-lg shadow-lg">
                         <img src="./images/apartment2.jpg" alt="Apartments"
-                            class="w-full h-64 object-cover transition group-hover:scale-110">
+                            class="w-full h-48 sm:h-64 object-cover transition group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-80"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold mb-2">Apartments</h3>
-                            <p class="mb-4">43 Properties</p>
+                        <div class="absolute bottom-0 left-0 p-4 sm:p-6 text-white">
+                            <h3 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Apartments</h3>
+                            <p class="mb-3 sm:mb-4 text-sm sm:text-base">43 Properties</p>
                             <a href="#"
-                                class="inline-block bg-white text-blue-800 px-4 py-2 rounded-lg transition hover:bg-blue-50">View
+                                class="inline-block bg-white text-blue-800 px-3 sm:px-4 py-1 sm:py-2 rounded-lg transition hover:bg-blue-50 text-sm sm:text-base">View
                                 All</a>
                         </div>
                     </div>
@@ -355,13 +377,13 @@
                     <!-- Townhouses Category -->
                     <div class="relative group overflow-hidden rounded-lg shadow-lg">
                         <img src="./images/house.jpg" alt="Townhouses"
-                            class="w-full h-64 object-cover transition group-hover:scale-110">
+                            class="w-full h-48 sm:h-64 object-cover transition group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-80"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold mb-2">Townhouses</h3>
-                            <p class="mb-4">22 Properties</p>
+                        <div class="absolute bottom-0 left-0 p-4 sm:p-6 text-white">
+                            <h3 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Townhouses</h3>
+                            <p class="mb-3 sm:mb-4 text-sm sm:text-base">22 Properties</p>
                             <a href="#"
-                                class="inline-block bg-white text-blue-800 px-4 py-2 rounded-lg transition hover:bg-blue-50">View
+                                class="inline-block bg-white text-blue-800 px-3 sm:px-4 py-1 sm:py-2 rounded-lg transition hover:bg-blue-50 text-sm sm:text-base">View
                                 All</a>
                         </div>
                     </div>
@@ -369,13 +391,13 @@
                     <!-- Condominiums Category -->
                     <div class="relative group overflow-hidden rounded-lg shadow-lg">
                         <img src="./images/codas.png" alt="Condominiums"
-                            class="w-full h-64 object-cover transition group-hover:scale-110">
+                            class="w-full h-48 sm:h-64 object-cover transition group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-80"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold mb-2">Condominiums</h3>
-                            <p class="mb-4">35 Properties</p>
+                        <div class="absolute bottom-0 left-0 p-4 sm:p-6 text-white">
+                            <h3 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Condominiums</h3>
+                            <p class="mb-3 sm:mb-4 text-sm sm:text-base">35 Properties</p>
                             <a href="#"
-                                class="inline-block bg-white text-blue-800 px-4 py-2 rounded-lg transition hover:bg-blue-50">View
+                                class="inline-block bg-white text-blue-800 px-3 sm:px-4 py-1 sm:py-2 rounded-lg transition hover:bg-blue-50 text-sm sm:text-base">View
                                 All</a>
                         </div>
                     </div>
@@ -383,13 +405,13 @@
                     <!-- Single-Family Homes Category -->
                     <div class="relative group overflow-hidden rounded-lg shadow-lg">
                         <img src="./images/familysuburban.jpg" alt="Single-Family Homes"
-                            class="w-full h-64 object-cover transition group-hover:scale-110">
+                            class="w-full h-48 sm:h-64 object-cover transition group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-80"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold mb-2">Single-Family Homes</h3>
-                            <p class="mb-4">29 Properties</p>
+                        <div class="absolute bottom-0 left-0 p-4 sm:p-6 text-white">
+                            <h3 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Single-Family Homes</h3>
+                            <p class="mb-3 sm:mb-4 text-sm sm:text-base">29 Properties</p>
                             <a href="#"
-                                class="inline-block bg-white text-blue-800 px-4 py-2 rounded-lg transition hover:bg-blue-50">View
+                                class="inline-block bg-white text-blue-800 px-3 sm:px-4 py-1 sm:py-2 rounded-lg transition hover:bg-blue-50 text-sm sm:text-base">View
                                 All</a>
                         </div>
                     </div>
@@ -397,40 +419,43 @@
                     <!-- Duplexes/Triplexes Category -->
                     <div class="relative group overflow-hidden rounded-lg shadow-lg">
                         <img src="./images/villa3.jpg" alt="Duplexes/Triplexes"
-                            class="w-full h-64 object-cover transition group-hover:scale-110">
+                            class="w-full h-48 sm:h-64 object-cover transition group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-80"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <h3 class="text-xl font-bold mb-2">Duplexes/Triplexes</h3>
-                            <p class="mb-4">15 Properties</p>
+                        <div class="absolute bottom-0 left-0 p-4 sm:p-6 text-white">
+                            <h3 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Duplexes/Triplexes</h3>
+                            <p class="mb-3 sm:mb-4 text-sm sm:text-base">15 Properties</p>
                             <a href="#"
-                                class="inline-block bg-white text-blue-800 px-4 py-2 rounded-lg transition hover:bg-blue-50">View
+                                class="inline-block bg-white text-blue-800 px-3 sm:px-4 py-1 sm:py-2 rounded-lg transition hover:bg-blue-50 text-sm sm:text-base">View
                                 All</a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- Recently Sold Properties -->
-        <section class="py-12 my-[32] w-full h-[80vh] ">
+        <section class="py-8 sm:py-12 my-8 sm:my-[32px] w-full h-auto sm:h-[80vh]">
             <div class="container mx-auto px-4">
-                <h2 class="text-[43px] font-[900] bg-gradient-to-br from-blue-800 to-blue-950 bg-clip-text text-transparent h-22 text-center">Recently Sold Properties</h2>
-                <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4  mb-16"></div>
+                <h2
+                    class="recentlysold text-3xl sm:text-[43px] sm:h-[45px] font-bold sm:font-[900] bg-gradient-to-br from-blue-800 to-blue-950 bg-clip-text text-transparent text-center">
+                    Recently Sold Properties</h2>
+                <div class="w-16 sm:w-24 h-1 bg-yellow-500 mx-auto mt-4 mb-8 sm:mb-16"></div>
 
-                <div class="grid md:grid-cols-4 gap-6 mx-auto max-w-7xl">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mx-auto max-w-7xl">
                     <!-- Sold Property 1 -->
                     <div class="bg-white rounded-lg overflow-hidden shadow-lg">
                         <div class="relative">
                             <img src="./images/mdoernvilla2.jpg" alt="Sold Property" class="w-full h-40 object-cover">
-                            <div class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 m-2 rounded">SOLD</div>
+                            <div
+                                class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 m-2 rounded text-xs sm:text-sm">
+                                SOLD</div>
                         </div>
                         <div class="p-4">
-                            <h3 class="font-bold my-1">Modern Apartment</h3>
-                            <div class="text-gray-600 text-sm mb-2">
+                            <h3 class="font-bold my-1 text-sm sm:text-base">Modern Apartment</h3>
+                            <div class="text-gray-600 text-xs sm:text-sm mb-2">
                                 <i class="fas fa-map-marker-alt mr-1"></i>Downtown Area
                             </div>
-                            <div class="flex justify-between text-gray-600 text-sm">
+                            <div class="flex justify-between text-gray-600 text-xs sm:text-sm">
                                 <span>Sold Price: $420,000</span>
                                 <span>March 2025</span>
                             </div>
@@ -441,32 +466,33 @@
                     <div class="bg-white rounded-lg overflow-hidden shadow-lg">
                         <div class="relative">
                             <img src="./images/house4.jpg" alt="Sold Property" class="w-full h-40 object-cover">
-                            <div class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 m-2 rounded">SOLD</div>
+                            <div
+                                class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 m-2 rounded text-xs sm:text-sm">
+                                SOLD</div>
                         </div>
                         <div class="p-4">
-                            <h3 class="font-bold my-1">Family Home</h3>
-                            <div class="text-gray-600 text-sm mb-2">
+                            <h3 class="font-bold my-1 text-sm sm:text-base">Family Home</h3>
+                            <div class="text-gray-600 text-xs sm:text-sm mb-2">
                                 <i class="fas fa-map-marker-alt mr-1"></i>Suburbia
                             </div>
-                            <div class="flex justify-between text-gray-600 text-sm">
+                            <div class="flex justify-between text-gray-600 text-xs sm:text-sm">
                                 <span>Sold Price: $550,000</span>
                                 <span>February 2025</span>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Sold Property 3 -->
+<!-- Sold Property 3 -->
                     <div class="bg-white rounded-lg overflow-hidden shadow-lg">
                         <div class="relative">
                             <img src="./images/villa3.jpg" alt="Sold Property" class="w-full h-40 object-cover">
-                            <div class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 m-2 rounded">SOLD</div>
+                            <div class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 m-2 rounded text-xs sm:text-sm">SOLD</div>
                         </div>
                         <div class="p-4">
-                            <h3 class="font-bold my-1">Luxury Condo</h3>
-                            <div class="text-gray-600 text-sm mb-2">
+                            <h3 class="font-bold my-1 text-sm sm:text-base">Luxury Condo</h3>
+                            <div class="text-gray-600 text-xs mb-2 sm:text-sm">
                                 <i class="fas fa-map-marker-alt mr-1"></i>Waterfront
                             </div>
-                            <div class="flex justify-between text-gray-600 text-sm">
+                            <div class="flex justify-between text-gray-600 text-xs sm:text-sm">
                                 <span>Sold Price: $680,000</span>
                                 <span>January 2025</span>
                             </div>
@@ -495,14 +521,16 @@
         </section>
     </main>
 
+
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 px-10">
+    <footer class="bg-gray-900 text-white py-12 px-3 sm:px-10">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Premier<span class="text-yellow-500">Homes</span></h3>
                     <p class="text-gray-400 mb-4">
-                        Your trusted partner in the real estate market since 2008. We're committed to helping you find the perfect property.
+                        Your trusted partner in the real estate market since 2008. We're committed to helping you find
+                        the perfect property.
                     </p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
@@ -511,7 +539,7 @@
                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h3 class="text-lg font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
@@ -522,18 +550,19 @@
                         <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h3 class="text-lg font-bold mb-4">Services</h3>
                     <ul class="space-y-2">
                         <li><a href="services.html" class="text-gray-400 hover:text-white">Property Sales</a></li>
                         <li><a href="services.html" class="text-gray-400 hover:text-white">Property Management</a></li>
                         <li><a href="services.html" class="text-gray-400 hover:text-white">Property Valuation</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">Investment Consulting</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Investment Consulting</a>
+                        </li>
                         <li><a href="services.html" class="text-gray-400 hover:text-white">Market Analysis</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h3 class="text-lg font-bold mb-4">Contact Us</h3>
                     <ul class="space-y-2">
@@ -556,7 +585,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
                 <p>&copy; 2025 Premier Homes. All rights reserved.</p>
             </div>

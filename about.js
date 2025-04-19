@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
       scrollTrigger: {
         trigger: '.team',
         start: 'top 75%',
-        end: 'center 60%',
+        end: 'top 60%',
         toggleActions: 'play none none none',
         scrub: 2
       }
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .from('.teamexperienced', {
         y: 30,
         opacity: 0,
-        duration: 0.8,
+        duration: 0.2,
         ease: 'power2.out'
       }, '-=0.3');
     
@@ -101,12 +101,12 @@ document.addEventListener('DOMContentLoaded', () => {
       y: 100,
       opacity: 0,
       stagger: 0.15,
-      duration: 0.8,
+      duration: 0.2,
       ease: 'power3.out',
       scrollTrigger: {
         trigger: '.bg-gray-50.mt-\\[49px\\] .md\\:grid-cols-4',
         start: 'top 80%',
-        end: 'bottom 60%',
+        end: 'top 60%',
         toggleActions: 'play none none none',
         // scrub: 1
       }
